@@ -3,6 +3,7 @@
     <introduction/>
     <binding/>
     <conditional/>
+    <loop/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import introduction from './components/introduction'
 import binding from './components/binding'
 import conditional from './components/conditional'
+import loop from './components/loop'
 
 export default {
   name: 'App',
   components: {
     introduction,
     binding,
-    conditional
+    conditional,
+    loop,
   }
 }
 </script>
