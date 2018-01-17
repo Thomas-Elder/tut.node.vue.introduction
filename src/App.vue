@@ -4,6 +4,7 @@
     <binding/>
     <conditional/>
     <loop/>
+    <userInput/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import introduction from './components/introduction'
 import binding from './components/binding'
 import conditional from './components/conditional'
 import loop from './components/loop'
+import userInput from './components/userInput'
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     binding,
     conditional,
     loop,
+    userInput
   }
 }
 </script>
