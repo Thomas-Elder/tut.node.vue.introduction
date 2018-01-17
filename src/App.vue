@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <introduction/>
+    <binding/>
   </div>
 </template>
 
 <script>
 import introduction from './components/introduction'
+import binding from './components/binding'
 
 export default {
   name: 'App',
   components: {
-    introduction
+    introduction,
+    binding
   }
 }
 </script>
