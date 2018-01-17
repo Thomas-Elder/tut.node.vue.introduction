@@ -2,18 +2,21 @@
   <div id="app">
     <introduction/>
     <binding/>
+    <conditional/>
   </div>
 </template>
 
 <script>
 import introduction from './components/introduction'
 import binding from './components/binding'
+import conditional from './components/conditional'
 
 export default {
   name: 'App',
   components: {
     introduction,
-    binding
+    binding,
+    conditional
   }
 }
 </script>
