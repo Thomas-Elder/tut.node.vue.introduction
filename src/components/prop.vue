@@ -1,12 +1,12 @@
 <template>
-  <li>{{ list.text }}</li>
+  <li>{{ item.text }}</li>
 </template>
 
 <script>
 export default {
   name: 'prop',
   props: {
-    list: {
+    item: {
       type: Object
     }
   }

@@ -1,7 +1,8 @@
 <template>
   <div>
     <ol>
-      <li v-for="todo in todos">
+      <li v-for="todo in todos"
+        :key="todo.id">
         {{ todo.text }}
       </li>
     </ol>
@@ -14,9 +15,9 @@
     data() {
       return {
         todos: [
-          { text: 'thing 1'},
-          { text: 'thing 2'},
-          { text: 'thing 3'}
+          { id: 0, text: 'thing 1'},
+          { id: 1, text: 'thing 2'},
+          { id: 2, text: 'thing 3'}
         ]
       }
     }

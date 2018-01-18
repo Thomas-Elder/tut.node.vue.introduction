@@ -8,7 +8,12 @@
     <ol>
       <prop
         v-for="item in list"
-          :list="item"
+          :item="item"
+          :key="item.id">
+      </prop>
+      <prop
+        v-for="item in otherList"
+          :item="item"
           :key="item.id">
       </prop>
     </ol>
@@ -31,6 +36,11 @@ export default {
         { id: 0, text: 'Apple' },
         { id: 1, text: 'Banana' },
         { id: 2, text: 'Pear' }
+      ], 
+      otherList: [
+        { id: 3, text: 'Mango' },
+        { id: 4, text: 'Strawberry' },
+        { id: 5, text: 'Raspberry' }
       ]
     }
   },
