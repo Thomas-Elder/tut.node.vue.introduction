@@ -5,6 +5,13 @@
     <conditional/>
     <loop/>
     <userInput/>
+    <ol>
+      <prop
+        v-for="item in list"
+        v-bind:prop="item"
+        v-bind:key="item.id">
+      </prop>
+    </ol>
   </div>
 </template>
 
@@ -14,6 +21,7 @@ import binding from './components/binding'
 import conditional from './components/conditional'
 import loop from './components/loop'
 import userInput from './components/userInput'
+import prop from './components/prop'
 
 export default {
   name: 'App',
@@ -22,7 +30,8 @@ export default {
     binding,
     conditional,
     loop,
-    userInput
+    userInput,
+    prop
   }
 }
 </script>

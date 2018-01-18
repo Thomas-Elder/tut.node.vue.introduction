@@ -1,11 +1,11 @@
 <template>
-<div>
-  <p>{{ message }}</p>
-  <button v-on:click="reverseMessage">Reverse Message </button>
+  <div>
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMessage">Reverse Message </button>
 
-  <p>{{ differentMessage }}</p>
-  <input v-model="differentMessage">
-</div>
+    <p>{{ differentMessage }}</p>
+    <input v-model="differentMessage">
+  </div>
 </template>
 
 <script>
