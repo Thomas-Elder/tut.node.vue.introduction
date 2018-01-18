@@ -8,8 +8,8 @@
     <ol>
       <prop
         v-for="item in list"
-        v-bind:prop="item"
-        v-bind:key="item.id">
+          :list="item"
+          :key="item.id">
       </prop>
     </ol>
   </div>
@@ -25,6 +25,15 @@ import prop from './components/prop'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      list: [
+        { id: 0, text: 'Apple' },
+        { id: 1, text: 'Banana' },
+        { id: 2, text: 'Pear' }
+      ]
+    }
+  },
   components: {
     introduction,
     binding,
