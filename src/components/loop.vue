@@ -2,7 +2,7 @@
   <div>
     <ol>
       <li v-for="todo in todos"
-        :key="todo.id">
+          :key="todo.id">
         {{ todo.text }}
       </li>
     </ol>
